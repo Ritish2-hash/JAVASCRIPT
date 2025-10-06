@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog App</title>
+</head>
+<body>
+  <h1>Blog App</h1>
+
+  <div>
+    <h2>Signup</h2>
+    <form id="signupForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+
+  <div>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div>
+    <h2>Add Blog</h2>
+    <form id="blogForm">
+      <input type="text" id="title" placeholder="Title" required>
+      <textarea id="content" placeholder="Content" required></textarea>
+      <button type="submit">Add Blog</button>
+    </form>
+  </div>
+
+  <button id="getAllBlogs">Get All Blogs</button>
+  <button id="getMyBlogs">Get My Blogs</button>
+
+  <div id="blogs"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
